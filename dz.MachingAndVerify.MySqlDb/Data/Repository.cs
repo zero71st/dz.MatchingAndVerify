@@ -10,30 +10,36 @@ namespace dz.MachingAndVerify.MySqlDb.Data
 {
     public class Repository<T>:IRepository<T> where T: BaseEntity
     {
+        private readonly MatchingAndVerifyDb _db;
+        
+        public Repository(MatchingAndVerifyDb db)
+        {
+            _db = db;
+        }
 
         public T GetById(int id)
         {
-            throw new NotImplementedException();
+            return _db.Set<T>().Where(t => t.Id == id).FirstOrDefault();
         }
 
         public IEnumerable<T> GetAll()
         {
-            throw new NotImplementedException();
+            return _db.Set<T>().AsEnumerable();
         }
 
         public T Add(T entity)
         {
-            throw new NotImplementedException();
+            return _db.Set<T>().Add(entity);
         }
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+             _db.Entry(entity).State = System.Data.Entity.EntityState.Modified;
         }
 
         public void Delete(T entity)
         {
-            throw new NotImplementedException();
+            _db.Set<T>().Remove(entity);
         }
     }
 }

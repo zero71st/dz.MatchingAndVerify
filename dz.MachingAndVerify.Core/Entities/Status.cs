@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dz.MachingAndVerify.MySqlDb.Data
+namespace dz.MatchingAndVerify.Core.Entities
 {
-    public class MatchingAndVerifyDb:DbContext
+    public enum Status:int
     {
-        
+        New = 1,
+        Matched = 2
     }
 }

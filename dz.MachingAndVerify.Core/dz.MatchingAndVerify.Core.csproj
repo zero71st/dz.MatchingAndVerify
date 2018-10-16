@@ -41,6 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\MatchingJob.cs" />
+    <Compile Include="Entities\MatchingJobItem.cs" />
+    <Compile Include="Entities\MatchingTemplateItem.cs" />
+    <Compile Include="Entities\MatchingTemplate.cs" />
+    <Compile Include="Entities\Status.cs" />
     <Compile Include="Interfaces\Repositories\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
