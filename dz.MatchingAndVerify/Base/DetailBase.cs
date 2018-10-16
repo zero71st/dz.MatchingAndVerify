@@ -24,7 +24,7 @@ namespace dz.MatchingAndVerify.Base
 
         protected virtual void OnCancel()
         {
-
+            Close();
         }
 
         private void btSave_Click(object sender, EventArgs e)

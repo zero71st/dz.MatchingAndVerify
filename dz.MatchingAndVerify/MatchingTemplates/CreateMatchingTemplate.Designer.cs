@@ -62,7 +62,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(133, 68);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(583, 25);
+            this.comboBox2.Size = new System.Drawing.Size(597, 25);
             this.comboBox2.TabIndex = 8;
             // 
             // comboBox1
@@ -71,13 +71,13 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(133, 22);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(583, 25);
+            this.comboBox1.Size = new System.Drawing.Size(597, 25);
             this.comboBox1.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(66, 71);
+            this.label2.Location = new System.Drawing.Point(65, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 17);
             this.label2.TabIndex = 6;
@@ -86,7 +86,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 25);
+            this.label1.Location = new System.Drawing.Point(53, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 17);
             this.label1.TabIndex = 5;
@@ -95,14 +95,14 @@
             // gvTemplates
             // 
             this.gvTemplates.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvTemplates.Location = new System.Drawing.Point(117, 252);
+            this.gvTemplates.Location = new System.Drawing.Point(15, 252);
             this.gvTemplates.Name = "gvTemplates";
-            this.gvTemplates.Size = new System.Drawing.Size(613, 150);
+            this.gvTemplates.Size = new System.Drawing.Size(715, 150);
             this.gvTemplates.TabIndex = 9;
             // 
             // btAdd
             // 
-            this.btAdd.Location = new System.Drawing.Point(574, 222);
+            this.btAdd.Location = new System.Drawing.Point(574, 223);
             this.btAdd.Name = "btAdd";
             this.btAdd.Size = new System.Drawing.Size(75, 25);
             this.btAdd.TabIndex = 10;
@@ -111,7 +111,7 @@
             // 
             // btRemove
             // 
-            this.btRemove.Location = new System.Drawing.Point(655, 222);
+            this.btRemove.Location = new System.Drawing.Point(655, 223);
             this.btRemove.Name = "btRemove";
             this.btRemove.Size = new System.Drawing.Size(75, 25);
             this.btRemove.TabIndex = 11;
@@ -121,7 +121,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(41, 112);
+            this.label3.Location = new System.Drawing.Point(40, 112);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 17);
             this.label3.TabIndex = 12;
@@ -133,13 +133,13 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(133, 109);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(583, 25);
+            this.comboBox3.Size = new System.Drawing.Size(597, 25);
             this.comboBox3.TabIndex = 13;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(276, 203);
+            this.label4.Location = new System.Drawing.Point(217, 203);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 17);
             this.label4.TabIndex = 14;
@@ -148,7 +148,7 @@
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(279, 222);
+            this.comboBox4.Location = new System.Drawing.Point(220, 223);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(121, 25);
             this.comboBox4.TabIndex = 15;
@@ -165,7 +165,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(114, 202);
+            this.label7.Location = new System.Drawing.Point(12, 203);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(132, 17);
             this.label7.TabIndex = 18;
@@ -173,7 +173,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(117, 224);
+            this.textBox1.Location = new System.Drawing.Point(15, 224);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(156, 23);
             this.textBox1.TabIndex = 19;

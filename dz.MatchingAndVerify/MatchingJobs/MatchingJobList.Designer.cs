@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btMatching = new System.Windows.Forms.Button();
             this.btCreate = new System.Windows.Forms.Button();
             this.gvJobs = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
@@ -38,7 +38,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btMatching);
             this.panel1.Controls.Add(this.btCreate);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -46,14 +46,15 @@
             this.panel1.Size = new System.Drawing.Size(579, 52);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // btMatching
             // 
-            this.button1.Location = new System.Drawing.Point(107, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 32);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Match And Verify";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btMatching.Location = new System.Drawing.Point(107, 12);
+            this.btMatching.Name = "btMatching";
+            this.btMatching.Size = new System.Drawing.Size(148, 32);
+            this.btMatching.TabIndex = 1;
+            this.btMatching.Text = "Matching And Verify";
+            this.btMatching.UseVisualStyleBackColor = true;
+            this.btMatching.Click += new System.EventHandler(this.btMatching_Click);
             // 
             // btCreate
             // 
@@ -71,7 +72,7 @@
             this.gvJobs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gvJobs.Location = new System.Drawing.Point(0, 52);
             this.gvJobs.Name = "gvJobs";
-            this.gvJobs.Size = new System.Drawing.Size(579, 289);
+            this.gvJobs.Size = new System.Drawing.Size(579, 267);
             this.gvJobs.TabIndex = 1;
             // 
             // MatchingJobList
@@ -83,9 +84,12 @@
             this.Controls.Add(this.panel1);
             this.Name = "MatchingJobList";
             this.Text = "Matching Jobs";
+            this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.gvJobs, 0);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvJobs)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -94,6 +98,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btCreate;
         private System.Windows.Forms.DataGridView gvJobs;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btMatching;
     }
 }

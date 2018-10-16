@@ -17,5 +17,10 @@ namespace dz.MatchingAndVerify.MatchingJobs
         {
             InitializeComponent();
         }
+
+        private void MatchingItem_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

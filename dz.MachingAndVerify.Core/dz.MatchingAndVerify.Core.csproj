@@ -46,14 +46,16 @@
     <Compile Include="Entities\MatchingTemplateItem.cs" />
     <Compile Include="Entities\MatchingTemplate.cs" />
     <Compile Include="Entities\Status.cs" />
+    <Compile Include="Exceptions\JobException.cs" />
     <Compile Include="Interfaces\Repositories\IRepository.cs" />
+    <Compile Include="Interfaces\Services\IMatchingJobService.cs" />
+    <Compile Include="Interfaces\Services\IMatchingTemplateService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\MatchingJobService.cs" />
+    <Compile Include="Services\MatchingTemplateService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Exceptions\" />
-    <Folder Include="Interfaces\Services\" />
     <Folder Include="POCOs\" />
-    <Folder Include="Services\" />
     <Folder Include="Specifications\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

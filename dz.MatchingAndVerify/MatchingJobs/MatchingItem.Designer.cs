@@ -42,8 +42,8 @@
             this.lbComponent3 = new System.Windows.Forms.Label();
             this.tbComponent4 = new System.Windows.Forms.TextBox();
             this.lbComponent4 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gvMatchingItems = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gvMatchingItems)).BeginInit();
             this.SuspendLayout();
             // 
             // btSave
@@ -175,20 +175,20 @@
             this.lbComponent4.TabIndex = 16;
             this.lbComponent4.Text = "Component 4";
             // 
-            // dataGridView1
+            // gvMatchingItems
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 310);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(719, 256);
-            this.dataGridView1.TabIndex = 17;
+            this.gvMatchingItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvMatchingItems.Location = new System.Drawing.Point(38, 310);
+            this.gvMatchingItems.Name = "gvMatchingItems";
+            this.gvMatchingItems.Size = new System.Drawing.Size(719, 256);
+            this.gvMatchingItems.TabIndex = 17;
             // 
             // MatchingItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(779, 633);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gvMatchingItems);
             this.Controls.Add(this.lbComponent4);
             this.Controls.Add(this.tbComponent4);
             this.Controls.Add(this.lbComponent3);
@@ -205,6 +205,7 @@
             this.Controls.Add(this.label1);
             this.Name = "MatchingItem";
             this.Text = "Matching Component";
+            this.Load += new System.EventHandler(this.MatchingItem_Load);
             this.Controls.SetChildIndex(this.btSave, 0);
             this.Controls.SetChildIndex(this.btCancel, 0);
             this.Controls.SetChildIndex(this.label1, 0);
@@ -221,8 +222,8 @@
             this.Controls.SetChildIndex(this.lbComponent3, 0);
             this.Controls.SetChildIndex(this.tbComponent4, 0);
             this.Controls.SetChildIndex(this.lbComponent4, 0);
-            this.Controls.SetChildIndex(this.dataGridView1, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Controls.SetChildIndex(this.gvMatchingItems, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.gvMatchingItems)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,6 +245,6 @@
         private System.Windows.Forms.Label lbComponent3;
         private System.Windows.Forms.TextBox tbComponent4;
         private System.Windows.Forms.Label lbComponent4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gvMatchingItems;
     }
 }

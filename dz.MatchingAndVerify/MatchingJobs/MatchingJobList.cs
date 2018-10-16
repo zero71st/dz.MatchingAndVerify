@@ -23,5 +23,12 @@ namespace dz.MatchingAndVerify.MatchingJobs
             var form = new CreateMatchingJob();
             form.ShowDialog();
         }
+
+        private void btMatching_Click(object sender, EventArgs e)
+        {
+            var form = new MatchingItem();
+
+            form.ShowDialog();
+        }
     }
 }
