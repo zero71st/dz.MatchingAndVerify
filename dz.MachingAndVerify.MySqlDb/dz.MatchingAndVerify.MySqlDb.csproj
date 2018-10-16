@@ -39,10 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Data\" />
+    <ProjectReference Include="..\dz.MachingAndVerify.Core\dz.MatchingAndVerify.Core.csproj">
+      <Project>{277c1e75-2ffc-4179-b6ff-0544601abfa5}</Project>
+      <Name>dz.MatchingAndVerify.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
