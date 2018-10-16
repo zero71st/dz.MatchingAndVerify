@@ -1,4 +1,6 @@
-﻿using System;
+﻿using dz.MachingAndVerify.MySqlDb.Data;
+using dz.UIDModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,23 @@ namespace dz.MatchingAndVerify.Base
 {
     public partial class FormBase : Form
     {
+        protected MatchingAndVerifyDb _matchingDb;
+        protected UIDTrackingDB _uidDb;
+
         public FormBase()
         {
             InitializeComponent();
+
+            FormClosing += FormBase_FormClosing;
+        }
+
+        void FormBase_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (_matchingDb != null)
+                _matchingDb.Dispose();
+
+            if (_uidDb != null)
+                _uidDb.Dispose();
         }
 
         protected virtual void AssignPermission()

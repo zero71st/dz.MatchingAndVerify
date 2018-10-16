@@ -31,10 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cbCustomer = new System.Windows.Forms.ComboBox();
+            this.cbProduct = new System.Windows.Forms.ComboBox();
+            this.cbJob = new System.Windows.Forms.ComboBox();
+            this.cbTemplate = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -68,47 +68,47 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(110, 112);
+            this.label3.Location = new System.Drawing.Point(45, 112);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 17);
+            this.label3.Size = new System.Drawing.Size(97, 17);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Job";
+            this.label3.Text = "Perso/UID Job";
             // 
-            // comboBox1
+            // cbCustomer
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(151, 20);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(449, 25);
-            this.comboBox1.TabIndex = 3;
+            this.cbCustomer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCustomer.FormattingEnabled = true;
+            this.cbCustomer.Location = new System.Drawing.Point(151, 20);
+            this.cbCustomer.Name = "cbCustomer";
+            this.cbCustomer.Size = new System.Drawing.Size(449, 25);
+            this.cbCustomer.TabIndex = 3;
             // 
-            // comboBox2
+            // cbProduct
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(151, 66);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(449, 25);
-            this.comboBox2.TabIndex = 4;
+            this.cbProduct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbProduct.FormattingEnabled = true;
+            this.cbProduct.Location = new System.Drawing.Point(151, 66);
+            this.cbProduct.Name = "cbProduct";
+            this.cbProduct.Size = new System.Drawing.Size(449, 25);
+            this.cbProduct.TabIndex = 4;
             // 
-            // comboBox3
+            // cbJob
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(151, 109);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(449, 25);
-            this.comboBox3.TabIndex = 5;
+            this.cbJob.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbJob.FormattingEnabled = true;
+            this.cbJob.Location = new System.Drawing.Point(151, 109);
+            this.cbJob.Name = "cbJob";
+            this.cbJob.Size = new System.Drawing.Size(449, 25);
+            this.cbJob.TabIndex = 5;
             // 
-            // comboBox4
+            // cbTemplate
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(151, 153);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(449, 25);
-            this.comboBox4.TabIndex = 6;
+            this.cbTemplate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTemplate.FormattingEnabled = true;
+            this.cbTemplate.Location = new System.Drawing.Point(151, 153);
+            this.cbTemplate.Name = "cbTemplate";
+            this.cbTemplate.Size = new System.Drawing.Size(449, 25);
+            this.cbTemplate.TabIndex = 6;
             // 
             // label4
             // 
@@ -125,10 +125,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(622, 265);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbTemplate);
+            this.Controls.Add(this.cbJob);
+            this.Controls.Add(this.cbProduct);
+            this.Controls.Add(this.cbCustomer);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -139,10 +139,10 @@
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label3, 0);
-            this.Controls.SetChildIndex(this.comboBox1, 0);
-            this.Controls.SetChildIndex(this.comboBox2, 0);
-            this.Controls.SetChildIndex(this.comboBox3, 0);
-            this.Controls.SetChildIndex(this.comboBox4, 0);
+            this.Controls.SetChildIndex(this.cbCustomer, 0);
+            this.Controls.SetChildIndex(this.cbProduct, 0);
+            this.Controls.SetChildIndex(this.cbJob, 0);
+            this.Controls.SetChildIndex(this.cbTemplate, 0);
             this.Controls.SetChildIndex(this.label4, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -154,10 +154,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cbCustomer;
+        private System.Windows.Forms.ComboBox cbProduct;
+        private System.Windows.Forms.ComboBox cbJob;
+        private System.Windows.Forms.ComboBox cbTemplate;
         private System.Windows.Forms.Label label4;
     }
 }

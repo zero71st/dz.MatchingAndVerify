@@ -10,11 +10,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using dz.MatchingAndVerify.MatchingJobs;
+using dz.MachingAndVerify.MySqlDb.Data;
 
 namespace dz.MatchingAndVerify
 {
-    public partial class Main : FormBase
+    
+    public partial class Main : FormBase,IDisposable
     {
+      
+
         public Main()
         {
             InitializeComponent();

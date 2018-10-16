@@ -8,12 +8,14 @@ using System.Threading.Tasks;
 
 namespace dz.MachingAndVerify.MySqlDb.Data
 {
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class MatchingAndVerifyDb:DbContext
     {
         public MatchingAndVerifyDb():base("MatchingAndVerifyDb")
         {
 
         }
+
         public virtual DbSet<MatchingJob> MatchingJobs { get; set; }
         public virtual DbSet<MatchingJobItem> MatchingJobItems { get; set; }
         public virtual DbSet<MatchingTemplate> MatchingTemplates { get; set; }
