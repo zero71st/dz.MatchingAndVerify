@@ -10,6 +10,7 @@ namespace dz.MachingAndVerify.MySqlDb.Data
 {
     public class Repository<T>:IRepository<T> where T: BaseEntity
     {
+
         public T GetById(int id)
         {
             throw new NotImplementedException();
