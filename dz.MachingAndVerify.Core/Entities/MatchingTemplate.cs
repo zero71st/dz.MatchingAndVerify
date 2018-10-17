@@ -22,8 +22,14 @@ namespace dz.MatchingAndVerify.Core.Entities
             CreateDate = DateTime.Today;
         }
 
-        public MatchingTemplate(int customerId,int productId,int uidJobId,string createBy):this()
+        public MatchingTemplate(int customerId,int productId,int uidJobId,string name,string createBy):this()
         {
+            CustomerId = customerId;
+            ProductId = productId;
+            JobSampleId = uidJobId;
+            Name = name;
+            CreateBy = createBy;
+
             Components = new List<MatchingTemplateItem>();
         }
     }

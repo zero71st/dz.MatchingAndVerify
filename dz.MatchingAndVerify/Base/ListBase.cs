@@ -16,5 +16,20 @@ namespace dz.MatchingAndVerify.Base
         {
             InitializeComponent();
         }
+
+        protected virtual void OnCreate()
+        {
+
+        }
+
+        protected virtual void OnEdit()
+        {
+
+        }
+
+        protected virtual void OnDelete()
+        {
+
+        }
     }
 }

@@ -4,6 +4,8 @@ using dz.MatchingAndVerify.Core.Entities;
 using dz.MatchingAndVerify.Core.Interfaces.Repositories;
 using dz.MatchingAndVerify.Core.Services;
 using dz.MatchingAndVerify.Helpers;
+using dz.MatchingAndVerify.Services;
+using dz.MatchingAndVerify.ViewModels;
 using dz.UIDServices;
 using System;
 using System.Collections.Generic;
@@ -23,12 +25,15 @@ namespace dz.MatchingAndVerify.MatchingTemplates
         private readonly ProductService _productService;
         private readonly JobService _uidJobService;
 
+        private readonly IRepository<MatchingTemplate> _templateRepository;
         private readonly MatchingTemplateService _templateService; 
+
+        private MatchingTemplate _template;
 
         public CreateMatchingTemplate()
         {
             InitializeComponent();
-
+            
             _uidDb = new UIDModel.UIDTrackingDB();
             _matchingDb = new MatchingAndVerifyDb();
 
@@ -36,11 +41,23 @@ namespace dz.MatchingAndVerify.MatchingTemplates
             _productService = new ProductService(_uidDb);
             _uidJobService = new JobService(_uidDb);
 
-            _templateService = new MatchingTemplateService(new Repository<MatchingTemplate>(_matchingDb));
+            _templateRepository = new Repository<MatchingTemplate>(_matchingDb);
+
+            _templateService = new MatchingTemplateService(_templateRepository);
 
             Shown += CreateMatchingJob_Shown;
 
             LoadCustomers();
+        }
+
+        public CreateMatchingTemplate(FormMode formMode):this()
+        {
+            FormMode = formMode;
+        }
+
+        public CreateMatchingTemplate(FormMode formMode,int templateId):this(formMode)
+        {
+            _template = _templateRepository.GetById(templateId);
         }
 
         private void CreateMatchingJob_Shown(object sender, EventArgs e)
@@ -95,15 +112,29 @@ namespace dz.MatchingAndVerify.MatchingTemplates
 
             try
             {
+                if (FormMode == ViewModels.FormMode.Add)
+                {
+                    int customerId = (int)cbCustomer.SelectedValue;
+                    int productId = (int)cbProduct.SelectedValue;
+                    int jobId = (int)cbJob.SelectedValue;
+                    string name = tbTemplateName.Text;
 
-                var template = new MatchingTemplate();
+                    _template = new MatchingTemplate(customerId, productId, jobId, name, AuthenticationService.LoggedUser);
 
-                template.CustomerId = (int)cbCustomer.SelectedValue;
-                template.ProductId = (int)cbProduct.SelectedValue;
-                template.JobSampleId = (int)cbJob.SelectedValue;
-                template.Name = tbComponentName.Text;
+                    _templateService.CreateTemplate(_template);
+                }
 
-                _templateService.CreateTemplate(template);
+                if (FormMode == ViewModels.FormMode.Edit)
+                {
+                    _template.CustomerId = (int)cbCustomer.SelectedValue;
+                    _template.ProductId = (int)cbProduct.SelectedValue;
+                    _template.JobSampleId = (int)cbJob.SelectedValue;
+                    _template.Name = tbTemplateName.Text;
+
+                    _templateRepository.Update(_template);
+                }
+
+                Info("Save");
             }
             catch (Exception ex)
             {

@@ -20,8 +20,7 @@ namespace dz.MatchingAndVerify.MatchingJobs
 
         private void btCreate_Click(object sender, EventArgs e)
         {
-            var form = new CreateMatchingJob();
-            form.ShowDialog();
+            OnCreate();
         }
 
         private void btMatching_Click(object sender, EventArgs e)
@@ -29,6 +28,24 @@ namespace dz.MatchingAndVerify.MatchingJobs
             var form = new MatchingItem();
 
             form.ShowDialog();
+        }
+
+        protected override void OnCreate()
+        {
+            base.OnCreate();
+
+            var form = new CreateMatchingJob();
+            form.ShowDialog();
+        }
+
+        protected override void OnEdit()
+        {
+            base.OnEdit();
+        }
+
+        protected override void OnDelete()
+        {
+            base.OnDelete();
         }
     }
 }

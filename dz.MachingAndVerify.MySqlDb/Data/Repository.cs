@@ -30,7 +30,6 @@ namespace dz.MachingAndVerify.MySqlDb.Data
         public T Add(T entity)
         {
             _db.Set<T>().Add(entity);
-
             _db.SaveChanges();
 
             return entity;
