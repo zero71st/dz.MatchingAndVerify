@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dz.MatchingAndVerify.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace dz.MatchingAndVerify.Base
 {
     public partial class DetailBase : FormBase
     {
+        public FormMode FormMode { get; set; }
+
         public DetailBase()
         {
             InitializeComponent();
@@ -37,4 +40,6 @@ namespace dz.MatchingAndVerify.Base
             OnCancel();
         }
     }
+
+    
 }

@@ -93,6 +93,7 @@
     <Compile Include="Base\ListBase.Designer.cs">
       <DependentUpon>ListBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\ComboBoxHelper.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +132,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\FormMode.cs" />
     <EmbeddedResource Include="Base\DetailBase.resx">
       <DependentUpon>DetailBase.cs</DependentUpon>
     </EmbeddedResource>

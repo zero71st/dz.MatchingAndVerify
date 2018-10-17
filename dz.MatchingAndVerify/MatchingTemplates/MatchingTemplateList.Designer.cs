@@ -29,74 +29,75 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btDelete = new System.Windows.Forms.Button();
+            this.btEdit = new System.Windows.Forms.Button();
+            this.btCreate = new System.Windows.Forms.Button();
+            this.gvTemplates = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvTemplates)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btDelete);
+            this.panel1.Controls.Add(this.btEdit);
+            this.panel1.Controls.Add(this.btCreate);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(528, 49);
             this.panel1.TabIndex = 0;
             // 
-            // button3
+            // btDelete
             // 
-            this.button3.Location = new System.Drawing.Point(192, 9);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(84, 32);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btDelete.Location = new System.Drawing.Point(192, 9);
+            this.btDelete.Name = "btDelete";
+            this.btDelete.Size = new System.Drawing.Size(84, 32);
+            this.btDelete.TabIndex = 2;
+            this.btDelete.Text = "Delete";
+            this.btDelete.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btEdit
             // 
-            this.button2.Location = new System.Drawing.Point(102, 9);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 32);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btEdit.Location = new System.Drawing.Point(102, 9);
+            this.btEdit.Name = "btEdit";
+            this.btEdit.Size = new System.Drawing.Size(84, 32);
+            this.btEdit.TabIndex = 1;
+            this.btEdit.Text = "Edit";
+            this.btEdit.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btCreate
             // 
-            this.button1.Location = new System.Drawing.Point(12, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 32);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Create";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btCreate.Location = new System.Drawing.Point(12, 9);
+            this.btCreate.Name = "btCreate";
+            this.btCreate.Size = new System.Drawing.Size(84, 32);
+            this.btCreate.TabIndex = 0;
+            this.btCreate.Text = "Create";
+            this.btCreate.UseVisualStyleBackColor = true;
+            this.btCreate.Click += new System.EventHandler(this.btCreate_Click);
             // 
-            // dataGridView1
+            // gvTemplates
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(528, 292);
-            this.dataGridView1.TabIndex = 2;
+            this.gvTemplates.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvTemplates.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvTemplates.Location = new System.Drawing.Point(0, 49);
+            this.gvTemplates.Name = "gvTemplates";
+            this.gvTemplates.Size = new System.Drawing.Size(528, 270);
+            this.gvTemplates.TabIndex = 2;
             // 
             // MatchingTemplateList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(528, 341);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gvTemplates);
             this.Controls.Add(this.panel1);
             this.Name = "MatchingTemplateList";
-            this.Text = "CreateMatchingTemplate";
+            this.Text = "Matching Components";
             this.Controls.SetChildIndex(this.panel1, 0);
-            this.Controls.SetChildIndex(this.dataGridView1, 0);
+            this.Controls.SetChildIndex(this.gvTemplates, 0);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvTemplates)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,9 +106,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btDelete;
+        private System.Windows.Forms.Button btEdit;
+        private System.Windows.Forms.Button btCreate;
+        private System.Windows.Forms.DataGridView gvTemplates;
     }
 }

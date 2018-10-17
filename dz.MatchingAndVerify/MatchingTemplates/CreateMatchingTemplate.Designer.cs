@@ -28,51 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbProduct = new System.Windows.Forms.ComboBox();
+            this.cbCustomer = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gvTemplates = new System.Windows.Forms.DataGridView();
             this.btAdd = new System.Windows.Forms.Button();
             this.btRemove = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbJob = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cbFieldName = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbComponentName = new System.Windows.Forms.TextBox();
+            this.tbFieldValue = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbTemplateName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gvTemplates)).BeginInit();
             this.SuspendLayout();
             // 
             // btSave
             // 
-            this.btSave.Location = new System.Drawing.Point(576, 415);
+            this.btSave.Location = new System.Drawing.Point(576, 417);
             // 
             // btCancel
             // 
-            this.btCancel.Location = new System.Drawing.Point(657, 415);
+            this.btCancel.Location = new System.Drawing.Point(657, 417);
             // 
-            // comboBox2
+            // cbProduct
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(133, 68);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(597, 25);
-            this.comboBox2.TabIndex = 8;
+            this.cbProduct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbProduct.FormattingEnabled = true;
+            this.cbProduct.Location = new System.Drawing.Point(133, 68);
+            this.cbProduct.Name = "cbProduct";
+            this.cbProduct.Size = new System.Drawing.Size(597, 25);
+            this.cbProduct.TabIndex = 8;
             // 
-            // comboBox1
+            // cbCustomer
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(133, 22);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(597, 25);
-            this.comboBox1.TabIndex = 7;
+            this.cbCustomer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCustomer.FormattingEnabled = true;
+            this.cbCustomer.Location = new System.Drawing.Point(133, 22);
+            this.cbCustomer.Name = "cbCustomer";
+            this.cbCustomer.Size = new System.Drawing.Size(597, 25);
+            this.cbCustomer.TabIndex = 7;
             // 
             // label2
             // 
@@ -95,7 +95,7 @@
             // gvTemplates
             // 
             this.gvTemplates.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvTemplates.Location = new System.Drawing.Point(15, 252);
+            this.gvTemplates.Location = new System.Drawing.Point(15, 259);
             this.gvTemplates.Name = "gvTemplates";
             this.gvTemplates.Size = new System.Drawing.Size(715, 150);
             this.gvTemplates.TabIndex = 9;
@@ -127,14 +127,14 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Sample Job";
             // 
-            // comboBox3
+            // cbJob
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(133, 109);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(597, 25);
-            this.comboBox3.TabIndex = 13;
+            this.cbJob.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbJob.FormattingEnabled = true;
+            this.cbJob.Location = new System.Drawing.Point(133, 109);
+            this.cbJob.Name = "cbJob";
+            this.cbJob.Size = new System.Drawing.Size(597, 25);
+            this.cbJob.TabIndex = 13;
             // 
             // label4
             // 
@@ -145,13 +145,13 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "Field Name";
             // 
-            // comboBox4
+            // cbFieldName
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(220, 223);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 25);
-            this.comboBox4.TabIndex = 15;
+            this.cbFieldName.FormattingEnabled = true;
+            this.cbFieldName.Location = new System.Drawing.Point(220, 223);
+            this.cbFieldName.Name = "cbFieldName";
+            this.cbFieldName.Size = new System.Drawing.Size(121, 25);
+            this.cbFieldName.TabIndex = 15;
             // 
             // label5
             // 
@@ -171,56 +171,56 @@
             this.label7.TabIndex = 18;
             this.label7.Text = "Component Name";
             // 
-            // textBox1
+            // tbComponentName
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 224);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 23);
-            this.textBox1.TabIndex = 19;
+            this.tbComponentName.Location = new System.Drawing.Point(15, 224);
+            this.tbComponentName.Name = "tbComponentName";
+            this.tbComponentName.Size = new System.Drawing.Size(156, 23);
+            this.tbComponentName.TabIndex = 19;
             // 
-            // textBox2
+            // tbFieldValue
             // 
-            this.textBox2.Location = new System.Drawing.Point(406, 224);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 23);
-            this.textBox2.TabIndex = 20;
+            this.tbFieldValue.Location = new System.Drawing.Point(406, 224);
+            this.tbFieldValue.Name = "tbFieldValue";
+            this.tbFieldValue.Size = new System.Drawing.Size(162, 23);
+            this.tbFieldValue.TabIndex = 20;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 154);
+            this.label6.Location = new System.Drawing.Point(12, 164);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 17);
             this.label6.TabIndex = 21;
             this.label6.Text = "Template Name";
             // 
-            // textBox3
+            // tbTemplateName
             // 
-            this.textBox3.Location = new System.Drawing.Point(133, 151);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(267, 23);
-            this.textBox3.TabIndex = 22;
+            this.tbTemplateName.Location = new System.Drawing.Point(133, 161);
+            this.tbTemplateName.Name = "tbTemplateName";
+            this.tbTemplateName.Size = new System.Drawing.Size(267, 23);
+            this.tbTemplateName.TabIndex = 22;
             // 
             // CreateMatchingTemplate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 456);
-            this.Controls.Add(this.textBox3);
+            this.ClientSize = new System.Drawing.Size(744, 458);
+            this.Controls.Add(this.tbTemplateName);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbFieldValue);
+            this.Controls.Add(this.tbComponentName);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.cbFieldName);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cbJob);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btRemove);
             this.Controls.Add(this.btAdd);
             this.Controls.Add(this.gvTemplates);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbProduct);
+            this.Controls.Add(this.cbCustomer);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "CreateMatchingTemplate";
@@ -229,21 +229,21 @@
             this.Controls.SetChildIndex(this.btCancel, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
-            this.Controls.SetChildIndex(this.comboBox1, 0);
-            this.Controls.SetChildIndex(this.comboBox2, 0);
+            this.Controls.SetChildIndex(this.cbCustomer, 0);
+            this.Controls.SetChildIndex(this.cbProduct, 0);
             this.Controls.SetChildIndex(this.gvTemplates, 0);
             this.Controls.SetChildIndex(this.btAdd, 0);
             this.Controls.SetChildIndex(this.btRemove, 0);
             this.Controls.SetChildIndex(this.label3, 0);
-            this.Controls.SetChildIndex(this.comboBox3, 0);
+            this.Controls.SetChildIndex(this.cbJob, 0);
             this.Controls.SetChildIndex(this.label4, 0);
-            this.Controls.SetChildIndex(this.comboBox4, 0);
+            this.Controls.SetChildIndex(this.cbFieldName, 0);
             this.Controls.SetChildIndex(this.label5, 0);
             this.Controls.SetChildIndex(this.label7, 0);
-            this.Controls.SetChildIndex(this.textBox1, 0);
-            this.Controls.SetChildIndex(this.textBox2, 0);
+            this.Controls.SetChildIndex(this.tbComponentName, 0);
+            this.Controls.SetChildIndex(this.tbFieldValue, 0);
             this.Controls.SetChildIndex(this.label6, 0);
-            this.Controls.SetChildIndex(this.textBox3, 0);
+            this.Controls.SetChildIndex(this.tbTemplateName, 0);
             ((System.ComponentModel.ISupportInitialize)(this.gvTemplates)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -252,22 +252,22 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbProduct;
+        private System.Windows.Forms.ComboBox cbCustomer;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView gvTemplates;
         private System.Windows.Forms.Button btAdd;
         private System.Windows.Forms.Button btRemove;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbJob;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cbFieldName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbComponentName;
+        private System.Windows.Forms.TextBox tbFieldValue;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbTemplateName;
     }
 }

@@ -29,17 +29,25 @@ namespace dz.MachingAndVerify.MySqlDb.Data
 
         public T Add(T entity)
         {
-            return _db.Set<T>().Add(entity);
+            _db.Set<T>().Add(entity);
+
+            _db.SaveChanges();
+
+            return entity;
         }
 
         public void Update(T entity)
         {
              _db.Entry(entity).State = System.Data.Entity.EntityState.Modified;
+
+             _db.SaveChanges();
         }
 
         public void Delete(T entity)
         {
             _db.Set<T>().Remove(entity);
+
+            _db.SaveChanges();
         }
     }
 }

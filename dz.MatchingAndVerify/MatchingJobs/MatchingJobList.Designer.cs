@@ -52,7 +52,7 @@
             this.btMatching.Name = "btMatching";
             this.btMatching.Size = new System.Drawing.Size(148, 32);
             this.btMatching.TabIndex = 1;
-            this.btMatching.Text = "Matching And Verify";
+            this.btMatching.Text = "Matches And Verify";
             this.btMatching.UseVisualStyleBackColor = true;
             this.btMatching.Click += new System.EventHandler(this.btMatching_Click);
             // 

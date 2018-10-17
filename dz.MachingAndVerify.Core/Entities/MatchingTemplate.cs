@@ -12,14 +12,19 @@ namespace dz.MatchingAndVerify.Core.Entities
         public int ProductId { get; set; }
         public int JobSampleId { get; set; }
         public string Name { get; set; }
+        public string CreateBy { get; set; }
+        public DateTime CreateDate { get; set; }
 
-        public virtual List<MatchingTemplateItem> Items { get; set; }
+        public virtual List<MatchingTemplateItem> Components { get; set; }
 
         public MatchingTemplate()
         {
-            Items = new List<MatchingTemplateItem>();
+            CreateDate = DateTime.Today;
         }
-        public string CreateBy { get; set; }
-        public DateTime CreateDate { get; set; }
+
+        public MatchingTemplate(int customerId,int productId,int uidJobId,string createBy):this()
+        {
+            Components = new List<MatchingTemplateItem>();
+        }
     }
 }
