@@ -16,6 +16,28 @@ namespace dz.MatchingAndVerify.Core.Entities
         public virtual MatchingTemplate MatchingTemplate { get; set; }
 
         public string CreateBy { get; set; }
-        public DateTime CreateDate { get; set; }
+        public DateTime CreateDate { get;set; }
+
+        public virtual List<MatchingJobItem> MatchItems { get;set; }
+
+        public MatchingJob()
+        {
+            MatchItems = new List<MatchingJobItem>();
+            CreateDate = DateTime.Now;
+        }
+
+        public MatchingJob(int customerId,int productId,int jobId,int templateId,string createBy):this()
+        {
+            CusotomerId = customerId;
+            ProductId = productId;
+            MatchingTemplateId = templateId;
+            CreateBy = createBy;
+        }
+
+        public void AddMatchItem(MatchingJobItem item)
+        {
+            item.Status = Status.New;
+            MatchItems.Add(item);
+        }
     }
 }

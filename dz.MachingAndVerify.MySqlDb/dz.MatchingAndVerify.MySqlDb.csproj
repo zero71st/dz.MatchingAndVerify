@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>dz.MachingAndVerify.MySqlDb</RootNamespace>
-    <AssemblyName>dz.MachingAndVerify.MySqlDb</AssemblyName>
+    <AssemblyName>dz.MatchingAndVerify.MySqlDb</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

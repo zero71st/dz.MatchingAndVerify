@@ -114,7 +114,7 @@
             // lbComponen1
             // 
             this.lbComponen1.AutoSize = true;
-            this.lbComponen1.Location = new System.Drawing.Point(35, 126);
+            this.lbComponen1.Location = new System.Drawing.Point(35, 136);
             this.lbComponen1.Name = "lbComponen1";
             this.lbComponen1.Size = new System.Drawing.Size(99, 17);
             this.lbComponen1.TabIndex = 9;
@@ -122,7 +122,7 @@
             // 
             // tbComponent1
             // 
-            this.tbComponent1.Location = new System.Drawing.Point(155, 123);
+            this.tbComponent1.Location = new System.Drawing.Point(155, 133);
             this.tbComponent1.Name = "tbComponent1";
             this.tbComponent1.Size = new System.Drawing.Size(602, 23);
             this.tbComponent1.TabIndex = 10;
@@ -130,7 +130,7 @@
             // lbComponent2
             // 
             this.lbComponent2.AutoSize = true;
-            this.lbComponent2.Location = new System.Drawing.Point(35, 165);
+            this.lbComponent2.Location = new System.Drawing.Point(35, 175);
             this.lbComponent2.Name = "lbComponent2";
             this.lbComponent2.Size = new System.Drawing.Size(99, 17);
             this.lbComponent2.TabIndex = 11;
@@ -138,14 +138,14 @@
             // 
             // tbComponent2
             // 
-            this.tbComponent2.Location = new System.Drawing.Point(155, 162);
+            this.tbComponent2.Location = new System.Drawing.Point(155, 172);
             this.tbComponent2.Name = "tbComponent2";
             this.tbComponent2.Size = new System.Drawing.Size(602, 23);
             this.tbComponent2.TabIndex = 12;
             // 
             // tbComponent3
             // 
-            this.tbComponent3.Location = new System.Drawing.Point(155, 201);
+            this.tbComponent3.Location = new System.Drawing.Point(155, 211);
             this.tbComponent3.Name = "tbComponent3";
             this.tbComponent3.Size = new System.Drawing.Size(602, 23);
             this.tbComponent3.TabIndex = 13;
@@ -153,7 +153,7 @@
             // lbComponent3
             // 
             this.lbComponent3.AutoSize = true;
-            this.lbComponent3.Location = new System.Drawing.Point(35, 204);
+            this.lbComponent3.Location = new System.Drawing.Point(35, 214);
             this.lbComponent3.Name = "lbComponent3";
             this.lbComponent3.Size = new System.Drawing.Size(99, 17);
             this.lbComponent3.TabIndex = 14;
@@ -161,7 +161,7 @@
             // 
             // tbComponent4
             // 
-            this.tbComponent4.Location = new System.Drawing.Point(155, 243);
+            this.tbComponent4.Location = new System.Drawing.Point(155, 253);
             this.tbComponent4.Name = "tbComponent4";
             this.tbComponent4.Size = new System.Drawing.Size(602, 23);
             this.tbComponent4.TabIndex = 15;
@@ -169,7 +169,7 @@
             // lbComponent4
             // 
             this.lbComponent4.AutoSize = true;
-            this.lbComponent4.Location = new System.Drawing.Point(35, 246);
+            this.lbComponent4.Location = new System.Drawing.Point(35, 256);
             this.lbComponent4.Name = "lbComponent4";
             this.lbComponent4.Size = new System.Drawing.Size(99, 17);
             this.lbComponent4.TabIndex = 16;

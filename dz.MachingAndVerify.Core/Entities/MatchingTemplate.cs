@@ -19,6 +19,7 @@ namespace dz.MatchingAndVerify.Core.Entities
 
         public MatchingTemplate()
         {
+            Components = new List<MatchingTemplateItem>();
             CreateDate = DateTime.Today;
         }
 
@@ -29,8 +30,6 @@ namespace dz.MatchingAndVerify.Core.Entities
             JobSampleId = uidJobId;
             Name = name;
             CreateBy = createBy;
-
-            Components = new List<MatchingTemplateItem>();
         }
     }
 }

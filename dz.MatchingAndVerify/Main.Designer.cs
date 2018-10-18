@@ -44,27 +44,25 @@
             this.tsbMatchingTemplate});
             this.tsMain.Location = new System.Drawing.Point(0, 0);
             this.tsMain.Name = "tsMain";
-            this.tsMain.Size = new System.Drawing.Size(579, 25);
+            this.tsMain.Size = new System.Drawing.Size(579, 39);
             this.tsMain.TabIndex = 1;
             this.tsMain.Text = "toolStrip1";
             // 
             // tsbMatchingJobs
             // 
-            this.tsbMatchingJobs.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tsbMatchingJobs.Image = ((System.Drawing.Image)(resources.GetObject("tsbMatchingJobs.Image")));
             this.tsbMatchingJobs.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbMatchingJobs.Name = "tsbMatchingJobs";
-            this.tsbMatchingJobs.Size = new System.Drawing.Size(106, 22);
+            this.tsbMatchingJobs.Size = new System.Drawing.Size(138, 36);
             this.tsbMatchingJobs.Text = "Matching Jobs";
             this.tsbMatchingJobs.Click += new System.EventHandler(this.tsbMatchingJobs_Click);
             // 
             // tsbMatchingTemplate
             // 
-            this.tsbMatchingTemplate.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tsbMatchingTemplate.Image = ((System.Drawing.Image)(resources.GetObject("tsbMatchingTemplate.Image")));
             this.tsbMatchingTemplate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbMatchingTemplate.Name = "tsbMatchingTemplate";
-            this.tsbMatchingTemplate.Size = new System.Drawing.Size(137, 22);
+            this.tsbMatchingTemplate.Size = new System.Drawing.Size(169, 36);
             this.tsbMatchingTemplate.Text = "Matching Template";
             this.tsbMatchingTemplate.Click += new System.EventHandler(this.tsbMatchingTemplate_Click);
             // 

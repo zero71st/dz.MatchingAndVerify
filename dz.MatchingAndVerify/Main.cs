@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using dz.MatchingAndVerify.MatchingJobs;
-using dz.MachingAndVerify.MySqlDb.Data;
+using dz.MatchingAndVerify.MySqlDb.Data;
 
 namespace dz.MatchingAndVerify
 {

@@ -68,7 +68,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(45, 112);
+            this.label3.Location = new System.Drawing.Point(45, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 17);
             this.label3.TabIndex = 2;
@@ -96,7 +96,7 @@
             // 
             this.cbJob.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbJob.FormattingEnabled = true;
-            this.cbJob.Location = new System.Drawing.Point(151, 109);
+            this.cbJob.Location = new System.Drawing.Point(151, 161);
             this.cbJob.Name = "cbJob";
             this.cbJob.Size = new System.Drawing.Size(449, 25);
             this.cbJob.TabIndex = 5;
@@ -105,7 +105,7 @@
             // 
             this.cbTemplate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTemplate.FormattingEnabled = true;
-            this.cbTemplate.Location = new System.Drawing.Point(151, 153);
+            this.cbTemplate.Location = new System.Drawing.Point(151, 115);
             this.cbTemplate.Name = "cbTemplate";
             this.cbTemplate.Size = new System.Drawing.Size(449, 25);
             this.cbTemplate.TabIndex = 6;
@@ -113,7 +113,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(74, 156);
+            this.label4.Location = new System.Drawing.Point(74, 118);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 17);
             this.label4.TabIndex = 7;

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace dz.MatchingAndVerify.Core.Entities
 {
+    
     public class BaseEntity
     {
         public int Id { get; set; }

@@ -1,4 +1,4 @@
-﻿using dz.MachingAndVerify.MySqlDb.Data;
+﻿using dz.MatchingAndVerify.MySqlDb.Data;
 using dz.MatchingAndVerify.Base;
 using dz.MatchingAndVerify.Core.Entities;
 using dz.MatchingAndVerify.Core.Interfaces.Repositories;

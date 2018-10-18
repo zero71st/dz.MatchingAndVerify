@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dz.MachingAndVerify.MySqlDb.Data
+namespace dz.MatchingAndVerify.MySqlDb.Data
 {
     public class Repository<T>:IRepository<T> where T: BaseEntity
     {

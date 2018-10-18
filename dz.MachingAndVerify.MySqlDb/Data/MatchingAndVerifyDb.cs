@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dz.MachingAndVerify.MySqlDb.Data
+namespace dz.MatchingAndVerify.MySqlDb.Data
 {
     [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class MatchingAndVerifyDb:DbContext
